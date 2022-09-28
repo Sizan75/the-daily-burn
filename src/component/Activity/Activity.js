@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Activity.css';
 import person from '../../image/people.jpg';
 
 const Activity = (props) => {
     const { activities } = props;
+    const [breakTime, setBreakTime] = useState();
 
+    const addABreak =(rest) =>{
+       const restTime = rest;
+       setBreakTime(restTime);
+    }
     let time = 0;
     for (const exercise of activities) {
         time = time + exercise.time;
-        console.log(exercise.time)
     }
     return (
         <div className='.bg-light  mt-5 pt-4 activity'>
@@ -38,11 +42,11 @@ const Activity = (props) => {
             <div>
                 <h4 className='align-left mb-3'>Add A Break </h4>
 
-                <button className='rounded-circle btn btn-primary me-2'>10</button>
-                <button className='rounded-circle btn btn-primary me-2'>15</button>
-                <button className='rounded-circle btn btn-primary me-2'>20</button>
-                <button className='rounded-circle btn btn-primary me-2'>25</button>
-                <button className='rounded-circle btn btn-primary me-2'>30</button>
+                <button onClick={()=>addABreak(10)} className='rounded-circle btn btn-primary me-2'>10</button>
+                <button onClick={()=>addABreak(15)} className='rounded-circle btn btn-primary me-2'>15</button>
+                <button onClick={()=>addABreak(20)} className='rounded-circle btn btn-primary me-2'>20</button>
+                <button onClick={()=>addABreak(25)} className='rounded-circle btn btn-primary me-2'>25</button>
+                <button onClick={()=>addABreak(30)} className='rounded-circle btn btn-primary me-2'>30</button>
             </div>
 
 
@@ -50,7 +54,7 @@ const Activity = (props) => {
             <div className='mt-5 align-left'>
                 <h5 className='mb-4'>Exercise Time: {time}</h5>
 
-                <h5 className='mb-4'>Break Time:  </h5>
+                <h5 className='mb-4'>Break Time: {breakTime} </h5>
 
                 <button className='btn btn-warning w-100'>Activity Completed</button>
             </div>
