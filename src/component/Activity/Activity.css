@@ -1,0 +1,8 @@
+.activity{
+        position: sticky;
+        top: 0;
+}
+.person{
+    width: 60px;
+    height:60px;
+}
