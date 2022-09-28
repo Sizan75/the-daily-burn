@@ -13,7 +13,7 @@ const Exercises = () => {
 
     return (
         <div>
-            <div>
+            <div className='row row-cols-1 row-cols-md-3 gx-4 gy-4 mt-5'>
            { exercises.map(exercise => <Exercise 
             exercise= {exercise}
             key = {exercise.id}

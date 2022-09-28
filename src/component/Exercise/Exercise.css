@@ -1,8 +1,16 @@
-.card-image{
-    width: 250px;
-    height: 250px;
-}
-.cart{
+.card{
     width: 300px;
-    height: 300px;
+    height: 600px;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
 }
+
+.card img{
+    width: 286px;
+    height: 286px;
+    margin: 7px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+  }
