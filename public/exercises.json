@@ -1,0 +1,44 @@
+[
+    {
+      "id": "63346703489c81dfe2dbc5d9",
+      "img": "https://media1.popsugar-assets.com/files/thumbor/ArsvymzjafH53GPfbjjcCcB3PxI/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2014/10/31/677/n/1922729/f5a12f7fbcd52af8_Basic-Push-Up.jpg",
+      "time": 10,
+      "details": "The push-up is a common calisthenics exercise beginning from the prone position. By raising and lowering the body using the arms, push-ups exercise the pectoral muscles, triceps",
+      "name": "Push-up"
+    },
+    {
+      "id": "63346703c15f46533348d673",
+      "img": "https://thumbs.dreamstime.com/z/woman-doing-squat-workout-two-step-exercise-guide-woman-doing-squat-workout-two-step-exercise-guide-vector-illustration-134431834.jpg",
+      "time": 10,
+      "details": "A squat is a strength exercise in which the trainee lowers their hips from a standing position and then stands back up. During the descent of a squat, the hip and knee joints flex while the ankle joint dorsiflexes.",
+      "name": "Squat"
+    },
+    {
+      "id": "63346703468769d776b9efaf",
+      "img": "https://i.ytimg.com/vi/uYumuL_G_V0/maxresdefault.jpg",
+      "time": 5,
+      "details": "Back Squat; Pause Squat; Front Squat; Box Squat; Barbell Split Squat; The Goblet Squat; Front Rack Reverse Lunge; Bulgarian Split Squat; Step Ups.",
+      "name": "Front Squat"
+    },
+    {
+      "id": "63346703493c8a6781381d6b",
+      "img": "https://www.crossfit.com/wp-content/uploads/2019/04/03111458/Bent-Over-Row-Collage-1024x576.png",
+      "time": 7,
+      "details": "Not only will these make your back look killer in that dress, but dumbbell rows are also another compound exercise that strengthens multiple muscles in your",
+      "name": "Dumbbell rows"
+    },
+    {
+      "id": "6334670356fb4771002a3bbd",
+      "img":"https://media.self.com/photos/615378c1150f8742ac896749/16:9/w_4991,h_2807,c_limit/Forearm%20Plank%20-%20Delise_001.jpg",
+      "time": 4 ,
+      "details": "Planks are an effective way to target both your abdominal muscles and your whole body. Planking stabilizes your core without straining your back",
+      "name": "Plank"
+    },
+   {
+      "id": "6334670356fb4771002a3Nad",
+      "img":"https://us.123rf.com/450wm/artinspiring/artinspiring1903/artinspiring190300562/124305430-man-making-lunges-doing-sport-exercises-in-gym-leg-workout-muscle-building-healthy-and-active-lifest.jpg",
+      "time": 12 ,
+      "details": "Lunges · Like squats, lunges work all the major muscles of the lower body: gluteals, quadriceps, and hamstrings.",
+      "name": "Lunge"
+    }
+  ]
