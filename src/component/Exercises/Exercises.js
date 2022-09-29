@@ -19,7 +19,7 @@ const Exercises = () => {
    }
 
     return (
-        <div className='exercises'>
+        <div className='exercises row-cols-sm-12 row'>
             <div className='row row-cols-sm-1 row-cols-md-3 gx-4 gy-4 mt-5'>
            { exercises.map(exercise => <Exercise 
             exercise= {exercise}
