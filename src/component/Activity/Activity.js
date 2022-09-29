@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Activity.css';
 import person from '../../image/people.jpg';
 
@@ -9,7 +9,13 @@ const Activity = (props) => {
     const addABreak =(rest) =>{
        const restTime = rest;
        setBreakTime(restTime);
+       localStorage.setItem("breakTime" , restTime);
     }
+    useEffect(()=>{
+        const getBreackTime= localStorage.getItem('breakTime');
+        setBreakTime(getBreackTime);
+    },[])
+
     let time = 0;
     for (const exercise of activities) {
         time = time + exercise.time;
@@ -52,9 +58,9 @@ const Activity = (props) => {
 
 
             <div className='mt-5 align-left'>
-                <h5 className='mb-4'>Exercise Time: {time}</h5>
+                <h5 className='mb-4'>Exercise Time: {time} Mins</h5>
 
-                <h5 className='mb-4'>Break Time: {breakTime} </h5>
+                <h5 className='mb-4'>Break Time: {breakTime} Mins</h5>
 
                 <button className='btn btn-warning w-100'>Activity Completed</button>
             </div>
