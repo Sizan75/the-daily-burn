@@ -1,7 +1,9 @@
+/* using grid for exercise and activity  */
 .exercises{
     display: grid;
-    grid-template-columns: 4fr  1fr;
+    grid-template-columns: 3fr  1fr;
 }
+/* meking site responsive for mobile device  */
 @media screen and (max-width: 700px) {
     .exercises{
         display: grid;

@@ -40,5 +40,26 @@
       "time": 12 ,
       "details": "Lunges · Like squats, lunges work all the major muscles of the lower body: gluteals, quadriceps, and hamstrings.",
       "name": "Lunge"
+    },
+    {
+      "id": "6334670356fb4771002skejs",
+      "img":"https://img.freepik.com/premium-vector/burpee-squat-thrust-exercise-men-workout-fitness-aerobic-exercises_476141-839.jpg",
+      "time": 10 ,
+      "details": "The burpee, a squat thrust with an additional stand between repetitions, is a full body exercise used in strength training. The movement itself is primarily an anaerobic exercise",
+      "name": "Burpee"
+    },
+   {
+      "id": "6334670356fb477as9343Naf",
+      "img":"https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/12/pull-up-pullup-gym-1296x728-header-1296x728.jpg",
+      "time": 15 ,
+      "details": "A pull-up is an upper-body strength exercise. The pull-up is a closed-chain movement where the body is suspended by the hands and pulls up. As this happens, the elbows flex.",
+      "name": "Pull-up"
+    },
+   {
+      "id": "6334670356fb4771002234cc",
+      "img":"https://www.wynnfitness.com/wp-content/uploads/2019/07/Goblet-Squat.jpg",
+      "time": 8 ,
+      "details": "Goblet squat · To set up, grip a dumbbell vertically with both hands underneath the top of the weight.Stand with your feet slightly wider than shoulder-width apart and toes slightly out.",
+      "name": "Goblet Squat"
     }
   ]

@@ -7,10 +7,11 @@ import person from '../../image/people.jpg';
 
 
 const Activity = (props) => {
+    // desturctreing props 
     const { activities } = props;
     const [breakTime, setBreakTime] = useState();
 
-    
+    // breack seting function 
     const addABreak = (rest ) => {
         
         const restTime = rest;
@@ -19,12 +20,12 @@ const Activity = (props) => {
         
     }
 
-
+// get data from local Storage 
     useEffect(() => {
         const getBreackTime = localStorage.getItem('breakTime');
         setBreakTime(getBreackTime);
     }, [])
-
+// calcuate exercise time
     let time = 0;
     for (const exercise of activities) {
         time = time + exercise.time;
@@ -42,15 +43,15 @@ const Activity = (props) => {
         });
 
     return (
-        <div className='.bg-light  mt-5 pt-4 activity'>
+        <div className='.bg-light  container mt-5 pt-4 activity'>
             <div className='d-flex align-items-center justify-content-center mb-5'>
-                <img src={person} className='img-fluid person rounded-circle' alt="" />
+                <img src={person} className='align-left img-fluid person rounded-circle' alt="" />
                 <div className=''>
                     <h6>MD.SAKI-UZ-ZAMAN</h6>
                     <p>Dhaka,Bangladesh</p>
                 </div>
             </div>
-            <div className='d-flex justify-content-between p-2 '>
+            <div className='d-flex justify-content-between info-section p-2 '>
 
                 <div>
                     <h4>65 <small>kg</small></h4>
@@ -68,8 +69,8 @@ const Activity = (props) => {
 
             <div>
                 <h4 className='align-left mb-3'>Add A Break </h4>
-
-                <button onClick={() => addABreak(10)} className='rounded-circle btn btn-primary me-2'>10</button>
+{/* break button  */}
+                <button onClick={() => addABreak(10)} className='rounded-circle  btn btn-primary me-2'>10</button>
                 <button  onClick={() => addABreak(15)} className='rounded-circle btn btn-primary me-2'>15</button>
                 <button  onClick={() => addABreak(20)} className='rounded-circle btn btn-primary me-2'>20</button>
                 <button  onClick={() => addABreak(25)} className='rounded-circle btn btn-primary me-2'>25</button>
@@ -78,12 +79,13 @@ const Activity = (props) => {
 
 
 
-            <div className='mt-5 align-left'>
-                <h5 className='mb-4'>Exercise Time: {time} Mins</h5>
-
-                <h5 className='mb-4'>Break Time: {breakTime} Mins</h5>
-
-                <button onClick={notify} className='btn btn-warning w-100'>Activity Completed</button>
+            <div className='mt-5 pt-5 pb-4 align-left info-section'>
+                {/* Total exercise time  */}
+                <h5 className='mb-4'>Exercise Time: {time} minutes</h5>
+{/* Showing Break Time  */}
+                <h5 className='mb-5'>Break Time: {breakTime} minutes</h5>
+{/* button for activity completed */}
+                <button onClick={notify} className='btn btn-warning w-100 btn-activity'>Activity Completed</button>
                 <ToastContainer
                     position="top-center"
                     autoClose={5000}

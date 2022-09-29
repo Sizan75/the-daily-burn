@@ -7,7 +7,7 @@ const Header = () => {
      <nav className="navbar navbar-expand-lg bg-light">
   <div className="container-fluid ms-5">
   
-    <a className="navbar-brand" href="/"> <FontAwesomeIcon icon={faDumbbell} /> The Daily Burn</a>
+    <a className="navbar-brand fw-semibold" href="/"> <FontAwesomeIcon icon={faDumbbell} /> The Daily Burn</a>
    
     
   </div>

@@ -1,3 +1,4 @@
+/* adding some style for card  */
 .card{
     width: 300px;
     height: 600px;
@@ -5,15 +6,13 @@
     border-radius: 8px;
 }
 
+/* image size fixing for card  */
 .card img{
-    width: 286px;
-    height: 286px;
+    width: 280px;
+    height: 280px;
     margin: 7px;
 }
-.card-body {
-    display: flex;
-    flex-direction: column;
-  }
+/* text align left  */
 .align-left{
     text-align: left;
 }
