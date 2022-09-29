@@ -10,10 +10,13 @@ const Activity = (props) => {
     const { activities } = props;
     const [breakTime, setBreakTime] = useState();
 
-    const addABreak = (rest) => {
+    
+    const addABreak = (rest ) => {
+        
         const restTime = rest;
         setBreakTime(restTime);
         localStorage.setItem("breakTime", restTime);
+        
     }
 
 
@@ -26,8 +29,8 @@ const Activity = (props) => {
     for (const exercise of activities) {
         time = time + exercise.time;
     }
-    // 
-
+    
+//  Toast for activity completed button
     const notify = () => toast.success(' Congratulations! Exercise Completed', {
         position: "top-center",
         autoClose: 5000,
@@ -67,10 +70,10 @@ const Activity = (props) => {
                 <h4 className='align-left mb-3'>Add A Break </h4>
 
                 <button onClick={() => addABreak(10)} className='rounded-circle btn btn-primary me-2'>10</button>
-                <button onClick={() => addABreak(15)} className='rounded-circle btn btn-primary me-2'>15</button>
-                <button onClick={() => addABreak(20)} className='rounded-circle btn btn-primary me-2'>20</button>
-                <button onClick={() => addABreak(25)} className='rounded-circle btn btn-primary me-2'>25</button>
-                <button onClick={() => addABreak(30)} className='rounded-circle btn btn-primary me-2'>30</button>
+                <button  onClick={() => addABreak(15)} className='rounded-circle btn btn-primary me-2'>15</button>
+                <button  onClick={() => addABreak(20)} className='rounded-circle btn btn-primary me-2'>20</button>
+                <button  onClick={() => addABreak(25)} className='rounded-circle btn btn-primary me-2'>25</button>
+                <button  onClick={() => addABreak(30)} className='rounded-circle btn btn-primary me-2'>30</button>
             </div>
 
 
